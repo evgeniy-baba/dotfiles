@@ -1,0 +1,9 @@
+[user]
+	name = evgeniy-baba
+	email = evgenijbaba@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+[color]
+	ui = true
+[push]
+	default = simple
