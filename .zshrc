@@ -88,4 +88,5 @@ setopt hist_ignore_space
 setopt hist_no_store
 setopt hist_save_no_dups
 
-alias gcam='git commit --amend -C HEAD'
+# Replace last commit
+alias gcr='git commit --amend -C HEAD'
