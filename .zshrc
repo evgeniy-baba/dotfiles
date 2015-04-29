@@ -48,7 +48,9 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vagrant git symfony2 history history-substring-search composer command-not-found zsh-syntax-highlighting autojump debian)
+plugins=(common-aliases osx brew vagrant git symfony2 history history-substring-search composer command-not-found zsh-syntax-highlighting debian colored-man jira httpie)
+
+JIRA_RAPID_BOARD=false
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,3 +92,11 @@ setopt hist_save_no_dups
 
 # Replace last commit
 alias gcr='git commit --amend -C HEAD'
+alias st='~/Projects/stash-command-line-tools/bin/stash'
+alias stpr='~/Projects/stash-command-line-tools/bin/stash pull-request'
+#alias -g @team='@pavel.savelyev @aleksandr.vedenyapin @grigoriy.pashukhin @ruslan.hanov'
+alias -g @team='@pavel.savelyev @aleksandr.vedenyapin @ruslan.hanov'
+alias stbr='~/Projects/stash-command-line-tools/bin/stash browse'
+
+alias jo='open_jira_issue `current_branch | grep -o "[A-Z]\+-[0-9]\+"`'
+
